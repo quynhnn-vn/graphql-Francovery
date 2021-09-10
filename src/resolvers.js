@@ -4,6 +4,9 @@ const resolvers = {
     photos: (_, { location }, { dataSources }) => {
       return dataSources.photoAPI.getPhotos(location);
     },
+    articles: (_, { location }, { dataSources }) => {
+      return dataSources.articleAPI.getArticles(location);
+    },
   },
 };
 module.exports = resolvers;

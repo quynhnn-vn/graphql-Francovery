@@ -2,13 +2,15 @@ const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./schema");
 const resolvers = require("./resolvers");
 const PhotoAPI = require("./datasources/photo-api");
+const ArticleAPI = require("./datasources/article-api");
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   dataSources: () => {
     return {
-      photoAPI: new PhotoAPI()
+      photoAPI: new PhotoAPI(),
+      articleAPI: new ArticleAPI(),
     }
   }
 });
