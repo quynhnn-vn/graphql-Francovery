@@ -9,7 +9,7 @@ class ArticleAPI extends RESTDataSource {
   // Perform a GET request to the "/tracks" endpoint
   getArticles(location) {
     return this.get(
-      `everything?q=${location}&sortBy=publishedAt&pageSize=20&language=fr&apiKey=${newsKey}`
+      `everything?q=${location}&sortBy=relevancy&pageSize=20&language=fr&apiKey=${newsKey}`
     );
   }
 }
