@@ -3,6 +3,7 @@ const typeDefs = require("./schema");
 const resolvers = require("./resolvers");
 const PhotoAPI = require("./datasources/photo-api");
 const ArticleAPI = require("./datasources/article-api");
+const WeatherAPI = require("./datasources/weather-api");
 
 const server = new ApolloServer({
   typeDefs,
@@ -11,6 +12,7 @@ const server = new ApolloServer({
     return {
       photoAPI: new PhotoAPI(),
       articleAPI: new ArticleAPI(),
+      weatherAPI: new WeatherAPI(),
     }
   }
 });
