@@ -7,9 +7,9 @@ class WeatherAPI extends RESTDataSource {
     this.baseURL = "https://api.openweathermap.org/data/2.5/";
   }
   // Perform a GET request to the "/tracks" endpoint
-  getHistoricalWeather(lat, lon) {
+  getWeather(location) {
     return this.get(
-      `onecall?lat=${lat}&lon=${lon}&exclude=daily&appid=${openweatherKey}`
+      `forecast?q=${location},fr?lang=fr&appid=${openweatherKey}`
     );
   }
 }
