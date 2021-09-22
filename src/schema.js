@@ -18,7 +18,6 @@ const typeDefs = gql`
   }
   type Urls {
     regular: String
-    full: String
   }
   type User {
     id: String
@@ -44,33 +43,19 @@ const typeDefs = gql`
   }
 
   """Openweather API"""
-  type Wind {
-    speed: Float
-  }
-  
   type Clouds {
     all: Int
   }
-  
-  type Weather {
-    main: String
-    description: String
-    icon: String
-  }
-  
+   
   type Main {
     temp: Float
     feels_like: Float
-    temp_min: Float
-    temp_max: Float
     humidity: Int
   }
   
   type List {
     dt_txt: String
-    wind: Wind
     clouds: Clouds
-    weather: [Weather]
     main: Main
   }
 `;
