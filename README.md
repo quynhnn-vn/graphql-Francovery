@@ -1,3 +1,7 @@
-# Catstronauts - server
+# GraphQL & Apollo Server - Francovery server
 
-The starting point of the `server` code for Odyssey Lift-off I course.
+This repository is the set-up for GraphQL server.
+
+To get started:
+1. Run `yarn install` to install all required dependencies
+2. Run `yarn start` to start the GraphQL API server

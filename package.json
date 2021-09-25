@@ -1,7 +1,7 @@
 {
-  "name": "pokedex-server",
+  "name": "francovery-server",
   "version": "1.0.0",
-  "description": "back-end app for Pokedex",
+  "description": "back-end app for Francovery",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index",
@@ -16,5 +16,6 @@
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.4"
   },
+  "author": "quynhnn-vn",
   "private": true
 }
