@@ -6,7 +6,8 @@ class WeatherAPI extends RESTDataSource {
     super();
     this.baseURL = "https://api.openweathermap.org/data/2.5/";
   }
-  // Perform a GET request to the "/tracks" endpoint
+  // Perform a GET to obtain forecast data related to a location
+  // with/without latitude and longitude, in Celsius unit and french language
   getWeather(location, lat, lon) {
     return this.get(
       `forecast?q=${location}&lat=${lat}&lon=${lon}&lang=fr&units=metric&appid=${openweatherKey}`

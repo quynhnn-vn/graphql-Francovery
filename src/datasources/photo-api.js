@@ -6,7 +6,7 @@ class PhotoAPI extends RESTDataSource {
     super();
     this.baseURL = "https://api.unsplash.com/";
   }
-  // Perform a GET request to the "/tracks" endpoint
+  // Perform a GET to search photos related to a location
   getPhotos(location) {
     return this.get(
       `search/photos?page=1&query=${location}&client_id=${unsplashKey}`
